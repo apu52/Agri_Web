@@ -1,0 +1,74 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 125 30% 97%;
+    --foreground: 135 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 135 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 135 30% 15%;
+
+    --primary: 135 30% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 45% 38%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 125 10% 92%;
+    --muted-foreground: 135 15% 45%;
+
+    --accent: 30 45% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 125 10% 85%;
+    --input: 125 10% 85%;
+    --ring: 135 30% 40%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .agri-card {
+    @apply rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300;
+  }
+  
+  .agri-btn {
+    @apply px-4 py-2 rounded-md transition-all duration-200;
+  }
+  
+  .agri-btn-primary {
+    @apply bg-agri-green text-white hover:bg-agri-green-dark;
+  }
+  
+  .agri-btn-secondary {
+    @apply bg-agri-brown text-white hover:bg-agri-brown-dark;
+  }
+  
+  .agri-input {
+    @apply rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-agri-green;
+  }
+  
+  .agri-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
