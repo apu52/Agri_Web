@@ -2,6 +2,9 @@
 
 # Agri_Web 🌱🌾
 
+![image](https://github.com/user-attachments/assets/76fc5ebc-0258-4943-b8a2-861572f4f182)
+
+
 Agri_Web is a web application designed to streamline agricultural processes and enhance productivity through technology. The platform connects farmers with tools, resources, and support to improve their agricultural practices.
 
 ## 📋 Table of Contents
